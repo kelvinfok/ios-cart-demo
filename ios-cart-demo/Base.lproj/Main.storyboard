@@ -90,48 +90,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="TU7-Br-j2D">
-                                <rect key="frame" x="87" y="136" width="240" height="240"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="RGw-31-bjw">
+                                <rect key="frame" x="24" y="136" width="366" height="240"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKB-Ef-aqY">
-                                        <rect key="frame" x="0.0" y="0.0" width="61.5" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-uI-NtT">
-                                        <rect key="frame" x="0.0" y="66" width="41.5" height="42"/>
+                                        <rect key="frame" x="0.0" y="63" width="366" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXi-I0-Nx6">
-                                        <rect key="frame" x="0.0" y="132" width="87" height="42"/>
+                                        <rect key="frame" x="0.0" y="126" width="366" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6VU-Un-U4o">
-                                        <rect key="frame" x="0.0" y="198" width="240" height="42"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLI-s5-YB9">
+                                        <rect key="frame" x="0.0" y="189" width="366" height="51"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="ZGP-i7-VSH"/>
-                                    <constraint firstAttribute="height" constant="240" id="bKT-q6-cOG"/>
+                                    <constraint firstAttribute="height" constant="240" id="nuf-fM-K1k"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TU7-Br-j2D" firstAttribute="top" secondItem="cBJ-5U-7Tw" secondAttribute="top" constant="48" id="0Wt-Pu-zP8"/>
-                            <constraint firstItem="TU7-Br-j2D" firstAttribute="centerX" secondItem="DDe-M1-dj1" secondAttribute="centerX" id="G77-Ld-9mI"/>
+                            <constraint firstItem="RGw-31-bjw" firstAttribute="leading" secondItem="cBJ-5U-7Tw" secondAttribute="leading" constant="24" id="9y6-vz-EXu"/>
+                            <constraint firstItem="RGw-31-bjw" firstAttribute="top" secondItem="cBJ-5U-7Tw" secondAttribute="top" constant="48" id="lFC-Ws-lw5"/>
+                            <constraint firstItem="cBJ-5U-7Tw" firstAttribute="trailing" secondItem="RGw-31-bjw" secondAttribute="trailing" constant="24" id="x7M-xp-nTA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cBJ-5U-7Tw"/>
                     </view>
                     <connections>
                         <outlet property="ageLabel" destination="GSf-uI-NtT" id="xyb-XL-M1c"/>
-                        <outlet property="favouriteColorView" destination="6VU-Un-U4o" id="K77-xP-CE7"/>
+                        <outlet property="favouriteColorView" destination="bLI-s5-YB9" id="j9P-xX-tGJ"/>
                         <outlet property="hobbiesLabel" destination="hXi-I0-Nx6" id="xdT-iM-I3U"/>
                         <outlet property="nameLabel" destination="sKB-Ef-aqY" id="yoY-NV-XUc"/>
                     </connections>

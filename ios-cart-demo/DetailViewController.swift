@@ -19,9 +19,13 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
+    }
+    
+    private func setupViews() {
         nameLabel.text = userProfile.name
         hobbiesLabel.text = userProfile.hobby
         ageLabel.text = String(describing: userProfile.age)
-        favouriteColorView.backgroundColor = .brown
+        favouriteColorView.backgroundColor = userProfile.favouriteColor
     }
 }

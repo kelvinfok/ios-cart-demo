@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         switch index {
         case 0:
-            favouriteColor = .blue
+            favouriteColor = .green
         default:
             favouriteColor = .yellow
         }
